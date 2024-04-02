@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Blog</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1 class="logo-text"><span>Eli</span>Cantwell</h1>
+      </div>
+      <i class="fa fa-bars menu-toggle"></i>
+      <ul class="nav">
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Blogs</a>
+          <ul>
+            <li><a href="my-values.html">My Values</a></li>
+            <li><a href="te-houtaewa-template.html">Te Houtaewa</a></li>
+            <li><a href="my-learning-plan.html">My Learning Plan</a></li>
+            <li>
+              <a href="css-positioning-tutorial.html"
+                >CSS Positioning Tutorial</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </header>
+    <h1>CSS Positioning Tutorial</h1>
+    <p>
+      To understand the different positions in CSS, we will start off by
+      explaining relative positioning. When an element has a positioning of
+      relative, any positioning adjustment you make to it will be relative to
+      where it originated from. For example:
+    </p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">position: relative;</p>
+      <p class="tutorial-code">top: 10px;</p>
+    </div>
+    <p>
+      An element with this line of CSS will be moved 10 pixels downwards from
+      its original position, with its anchor (where its moved from) being the
+      top part of the element. It’s also important to note that all of these
+      positioning elements (relative, absolute and fixed) do not effect, and are
+      not effected by other elements on the page like they would be when using
+      margin, padding etc.
+    </p>
+    <p>
+      Now let’s move on to absolute positioning. Any element with the
+      positioning of absolute will look for its closest parent element with the
+      positioning of relative, and any positioning adjustments made will be
+      relative to that parent element. For example:
+    </p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">element-1 {</p>
+      <p class="tutorial-code">position: relative;</p>
+      <p class="tutorial-code">}</p>
+      <p class="tutorial-code">element-2 {</p>
+      <p class="tutorial-code">position: absolute;</p>
+      <p class="tutorial-code">right: 10px;</p>
+      <p class="tutorial-code">}</p>
+    </div>
+    <p>
+      In this example, element 2 will make its position adjustment of 10px from
+      the right of element 1’s original position.
+    </p>
+
+    <p>
+      Lastly, let’s talk about fixed positioning. An element with the
+      positioning of fixed won’t take anything into account, and will be fixed
+      on the page wherever you place it. Positioning adjustments will be
+      relative to the edges of the viewport. For example:
+    </p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">position: fixed;</p>
+      <p class="tutorial-code">left: 10px;</p>
+      <p class="tutorial-code">top: 10px;</p>
+    </div>
+    <p>
+      In this example, our element would be placed in the top left corner of our
+      viewport, and will remain there no matter what we do.
+    </p>
+  </body>
+</html>

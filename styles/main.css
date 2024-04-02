@@ -30,7 +30,14 @@ h2,
 h3 {
   text-align: center;
 }
-
+.tutorial-code {
+  font-style: italic;
+  line-height: 5px;
+}
+.tutorial-code-div {
+  background-color: aquamarine;
+  padding: 10px;
+}
 header {
   background: #6edbff;
   height: 66px;
@@ -92,7 +99,10 @@ header ul li ul li {
 header ul li ul li a {
   font-size: 15px;
   text-align: center;
-  padding: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 header ul li a:hover {
