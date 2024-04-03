@@ -121,6 +121,7 @@ header .menu-toggle {
   }
   .showing {
     max-height: 100em;
+    overflow: visible;
   }
   header ul li {
     width: 100%;
