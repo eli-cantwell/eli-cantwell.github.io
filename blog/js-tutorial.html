@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Blog</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1 class="logo-text"><span>Eli</span>Cantwell</h1>
+      </div>
+      <i class="fa fa-bars menu-toggle"></i>
+      <ul class="nav">
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Blogs</a>
+          <ul>
+            <li><a href="my-values.html">My Values</a></li>
+            <li><a href="te-houtaewa-template.html">Te Houtaewa</a></li>
+            <li><a href="my-learning-plan.html">My Learning Plan</a></li>
+            <li>
+              <a href="css-positioning-tutorial.html"
+                >CSS Positioning Tutorial</a
+              >
+            </li>
+            <li><a href="js-tutorial.html">JS Tutorial</a></li>
+            <li>
+              <a href="emotional-intelligence.html">Emotional Intelligence</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </header>
+    <h1>JS Tutorial</h1>
+
+    <h2>
+      If HTML is the bones of a website and CSS is the styling of a website,
+      JavaScript is the code that tells things what to do.
+    </h2>
+
+    <p>
+      The control flow of a piece of code is the order in which lines of code
+      are executed, and a loop is a piece of code that instructs a your computer
+      to repeat an action until a certain condition is met. Let’s use making a
+      bowl of cereal as an example. The control flow of making a bowl of cereal
+      is quite straight forward. You have a list of steps that you follow
+      chronologically. You add cereal to the bowl, you add milk, then sugar. Now
+      let’s think of eating the cereal as a loop. In this loop, we want to
+      instruct ourselves to repeat the step of eating a spoonful of cereal until
+      we either un out of cereal, or if we are full.
+    </p>
+    <p>
+      The DOM (Document Object Model) is a way for your JavaScript to take
+      certain things from the HTML of your website so you can then manipulate
+      what it does using JavaScript. For example, in your JS code, you could
+      write:
+    </p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">
+        document.querySelector(‘h1’).innerHTML = ‘Hello’
+      </p>
+    </div>
+    <p>
+      This grabs the first h1 element from your HTML code and tells it to
+      display ‘Hello’. If we wanted to grab all of the h1 instances in our html
+      we could write:
+    </p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">
+        document.querySelectorAll(‘h1’).innerHTML = ‘Hello’
+      </p>
+    </div>
+    <p>You can also elect something with a specific Id by typing:</p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">
+        document.querySelector(‘#id-name’).innerHTML = ‘Hello’
+      </p>
+    </div>
+    <p>
+      Let’s take it a step further and make a button that changes a line of text
+      on our webpage.
+    </p>
+    <p>
+      First, we need to declare 2 variables, one for the button, and one for the
+      text. In this example, let’s assume that in our HTML we have a button with
+      the id of ‘button-1’ and a paragraph with the id of ‘paragraph-1’. In
+      order to grab these from the HTML and bring them into our JS code, we need
+      to declare the following variables:
+    </p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">
+        let button-1 = document.querySelector(‘button-1’);
+      </p>
+      <p class="tutorial-code">
+        let paragraph-1 = document.querySelector(‘paragraph-1’).innerHTML = ‘Old
+        Text’
+      </p>
+    </div>
+    <p>
+      This grabs our paragraph and our button and assigns them to a variable
+      that we can now manipulate within our javascript. Now we can create an
+      eventListener function to listen out for when the button is clicked, and
+      and bury a function that changes the text of the paragraph inside it. This
+      is how that would look:
+    </p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">
+        button-1.addEventListener(‘click’, function () {
+      </p>
+      <p class="tutorial-code">paragraph-1.textContent = ’New Text’;</p>
+      <p class="tutorial-code">});</p>
+    </div>
+    <p>
+      Now when a user clicks on our button the paragraph-1 text will change from
+      ‘Old Text’ to ‘New Text’.
+    </p>
+    <p>
+      In that last example we used a function to change the paragraph-1 text.
+      Next, we’ll explore what a function actually does. Put simply, a function
+      is a javascript element that performs tasks or calculates a value. Here’s
+      an example:
+    </p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">function simpleAddition(num1, num2) {</p>
+      <p class="tutorial-code">return num1 + num2;</p>
+      <p class="tutorial-code">}</p>
+    </div>
+    <p>
+      This declares a function with the name simpleAddition. Now we can call
+      that function by declaring a variable like this:
+    </p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">let answer = simpleAddition(3, 5);</p>
+    </div>
+    <p>
+      Now if we were to console.log(answer) we would get an output of 8 in our
+      console.
+    </p>
+    <p></p>
+    <p></p>
+  </body>
+</html>

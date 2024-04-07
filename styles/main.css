@@ -31,7 +31,8 @@ h3 {
   text-align: center;
 }
 .tutorial-code {
-  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: bold;
   line-height: 5px;
 }
 .tutorial-code-div {
