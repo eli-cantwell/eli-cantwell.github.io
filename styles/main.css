@@ -33,12 +33,24 @@ h3 {
 .tutorial-code {
   font-family: 'Courier New', Courier, monospace;
   font-style: bold;
-  line-height: 5px;
+  line-height: 18px;
 }
 .tutorial-code-div {
   background-color: aquamarine;
   padding: 10px;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images {
+  width: 50%;
+  max-width: max-content;
+}
+
 header {
   background: #6edbff;
   height: 66px;
