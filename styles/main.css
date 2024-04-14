@@ -5,7 +5,7 @@
 body {
   padding: 0px;
   margin: 0px;
-  background: #e3fffb;
+  background: rgb(251, 250, 223);
   font-family: 'Lora', serif;
 }
 #profile-picture-div {
@@ -36,25 +36,47 @@ h3 {
   line-height: 18px;
 }
 .tutorial-code-div {
-  background-color: aquamarine;
+  background-color: rgb(255, 237, 202);
   padding: 10px;
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-top-color: #000;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: #000;
+  margin-left: 21%;
+  margin-right: 21%;
+}
+
+p {
+  text-align: justify;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
+  padding: 10px;
 }
 
 .images {
   width: 50%;
   max-width: max-content;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #000;
 }
 
 header {
-  background: #6edbff;
+  background: #d3ab80;
   height: 66px;
   position: relative;
+}
+
+.longName {
 }
 
 header * {
@@ -69,9 +91,10 @@ header .logo {
 header .logo-text {
   margin: 8px;
   font-family: 'Candal', serif;
+  color: rgb(255, 245, 228);
 }
 header .logo-text span {
-  color: aqua;
+  color: rgb(255, 245, 228);
 }
 
 header ul {
@@ -96,13 +119,14 @@ header ul li ul {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #b3ecff;
+  background: #d3ab80;
   width: 100%;
   z-index: 1000;
 }
 
 header ul li:hover ul {
   display: block;
+  transition: 0.5;
 }
 
 header ul li ul li {
@@ -118,8 +142,13 @@ header ul li ul li a {
   padding-right: 0px;
 }
 
+header ul li ul li a:hover {
+  background: #ba7e3d;
+  transition: 0.5s;
+}
+
 header ul li a:hover {
-  background: #57bdfb;
+  background: #ba7e3d;
   transition: 0.5s;
 }
 header .menu-toggle {
@@ -132,6 +161,13 @@ header .menu-toggle {
     max-height: 0px;
     overflow: hidden;
   }
+
+  p {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+  }
+
   .showing {
     max-height: 100em;
     overflow: visible;
@@ -162,5 +198,9 @@ header .menu-toggle {
     margin-left: 0.5em;
   }
   header .logo-text {
+  }
+  .tutorial-code-div {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }

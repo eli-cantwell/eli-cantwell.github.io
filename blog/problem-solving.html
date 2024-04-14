@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Blog</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1 class="logo-text"><span>Eli</span>Cantwell</h1>
+      </div>
+      <i class="fa fa-bars menu-toggle"></i>
+      <ul class="nav">
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Blogs</a>
+          <ul>
+            <li><a href="my-values.html">My Values</a></li>
+            <li><a href="te-houtaewa-template.html">Te Houtaewa</a></li>
+            <li><a href="my-learning-plan.html">My Learning Plan</a></li>
+            <li>
+              <a href="css-positioning-tutorial.html"
+                >CSS Positioning Tutorial</a
+              >
+            </li>
+            <li><a href="js-tutorial.html">JS Tutorial</a></li>
+            <li>
+              <a href="emotional-intelligence.html">Emotional Intelligence</a>
+              <li><a href="te-whare-tapa-wha.html">Te Whare Tapa Whā</a></li>
+            <li><a href="problem-solving.html">Probelm Solving</a></li>
+            <li><a href="neuroplasticity.html">Neuroplasticity</a></li>
+            </li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </header>
+    <h1>Problem Solving</h1>
+    <p>
+      As someone who is new to coding, encountering problems while learning how to code is inevitable. One of the first problems I encountered was understanding the order of declared variables:
+    </p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">let nameOne = 'Marama'</p>
+      <p class="tutorial-code">let nameTwo = 'Wiremu'</p>
+      <p class="tutorial-code">let nameThree = nameTwo</p>
+      <p class="tutorial-code">nameTwo = nameOne</p>
+      <p class="tutorial-code">nameOne = nameThree</p>
+    </div>
+    <p>
+      My first thought was that nameOne would have the value of 'Marama' because nameTwo = nameOne would set nameTwo's value to 'Marama’. I tried for a while to figure out why ‘nameOne’s’ value is Wiremu, and eventually asked one of my classmates if the reason was because ‘let nameThree = nameTwo’ was declared before reassignment of ‘nameTwo = nameOne’. He let me know that I was correct, and I learned a valuable lesson on the order of declared variables, specifically that reassigning variables values doesn’t change the code that came before it.
+    </p>
+    <p>
+      An example of a problem that I am proud of solving was learning how to count backwards using a for loop. My initial code was:
+    </p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">const countdown = [‘1’, ’2’, ‘3’, ‘blastoff’ ]</p>
+      <p class="tutorial-code"></p>
+      <p class="tutorial-code">function printCountdown(countdown) {</p>
+      <p class="tutorial-code">for (let i =  countdown.length; i > 0; i—) {</p>
+      <p class="tutorial-code">console.log(countdown[I] + ‘!’)</p>
+      <p class="tutorial-code">}}</p>
+    </div>
+    <p>
+      Initially I thought that this code was spot on. Obviously it didn’t work, so I asked my classmate where I went wrong. He told me that the problem was in the ‘i = countdown.length;’ section of the for loop, but he didn’t tell me what was wrong with it. I sat there for 5 minutes and thought about it. I then had the realisation that when you call something from an array, you start counting from zero. So the string that says ‘1’ would be [0] in the array, ‘2’ would be [1] in the array etc, but countdown.length gives me the actual amount of strings in the array, which in this case is 4. So with the code I have now, Im trying to call [4] which doesn’t exist in the array. So then I thought I must just have to -1 from the countdown length, which got me to my final code of:
+    </p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">const countdown = [‘1’, ’2’, ‘3’, ‘blastoff’ ]</p>
+      <p class="tutorial-code">                                     </p>
+      <p class="tutorial-code">function printCountdown(countdown) {</p>
+      <p class="tutorial-code">for (let i =  countdown.length - 1; i > 0; i—) {</p>
+      <p class="tutorial-code">console.log(countdown[I] + ‘!’)</p>
+      <p class="tutorial-code">}}</p>
+    </div>
+    <p>
+      It was very satisfying to figure this out on my own, and I’m grateful to my classmate for not giving me the answer right away and allowing me to figure it out.
+    </p>
+
+    <h2>Reflection on my confidence using certain problem-solving techniques</h2>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">Pseudocode:</p>
+    </div>
+    <p>
+      I haven’t had a proper go at using pseudocode yet, but I can see how it would be useful. I think once I start on bigger projects, it will end up being an essential part of my tool-kit.
+    </p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">Trying something:</p>
+    </div>
+    <p>This is what I mainly do, I think of something that might solve a problem and I use console.log to see if it gives me the desired result.
+    </p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">Rubber ducky method:</p>
+    </div>
+    <p>This is something I haven’t really tried when solving a problem, but it is similar to the process of reflecting after completing a task wherein you have to explain something as if your teaching it to someone else which I find to be very helpful to identify areas of a subject that I might not be so adept at.</p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">Reading error messages:</p>
+    </div>
+    <p>This is relatively easy as error messages tend to give you a reason for the error and will show you where in the code the error has occurred. I’d say I’m pretty confident with this.</p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">Googling:
+      </p>
+    </div>
+    <p>Googling is one of my go to’s. I will usually do this before asking a classmate for help. </p>
+    <div class="tutorial-code-div">
+      <p class="tutorial-code">Asking your peers and coaches for help:</p>
+    </div>
+    <p>I have been asking my peers for help a lot throughout the intro to JavaScript and they have been immensely helpful in helping me to understand certain concepts. I’d say I am pretty good at doing this, I just hope I’m not getting too annoying.</p>
+    <p>I find myself wanting to ask a lot of questions, so sometimes I will be reluctant to ask a question because I feel like I am asking too much. </p>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
