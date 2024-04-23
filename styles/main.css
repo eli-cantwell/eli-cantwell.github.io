@@ -30,11 +30,7 @@ h2,
 h3 {
   text-align: center;
 }
-.tutorial-code {
-  font-family: 'Courier New', Courier, monospace;
-  font-style: bold;
-  line-height: 18px;
-}
+
 .tutorial-code-div {
   background-color: rgb(255, 237, 202);
   padding: 10px;
@@ -44,6 +40,14 @@ h3 {
   border-bottom-width: 4px;
   border-bottom-style: solid;
   border-bottom-color: #000;
+  margin-left: 21%;
+  margin-right: 21%;
+}
+
+.tutorial-code {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: bold;
+  line-height: 18px;
   margin-left: 21%;
   margin-right: 21%;
 }
